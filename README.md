@@ -4,14 +4,14 @@
 
 **Key Features:**
 
-**1. Table-based organization** (bold)
+**1. Table-based organization**
     * Manage and track records efficiently.
     * **Clear and customizable table structure.**
 
-**2. Tab management** (bold)
+**2. Tab management**
     * Create and switch between multiple tabs for organized data.
 
-**3. User-friendly interface** (bold)
+**3. User-friendly interface**
     * Interact with your data intuitively through an accessible GUI.
 
 **(Continue with other features)**
