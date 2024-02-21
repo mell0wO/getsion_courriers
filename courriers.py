@@ -41,15 +41,67 @@ class CourriersWidget(QWidget):
         button_layout.addWidget(self.load_json_button)
         button_layout.addWidget(self.save_json_button)
 
+        # Add the button layout to the main layout
+        main_layout.addLayout(button_layout)
+
         # Create a tab widget to contain multiple tabs
         self.tab_widget = QTabWidget()
+
+        # Set the tab position to North (Top)
+        self.tab_widget.setTabPosition(QTabWidget.North)
 
         # Connect tab change event
         self.tab_widget.currentChanged.connect(self.tab_changed)
 
-        # Add the tab widget and button layout to the main layout
-        main_layout.addLayout(button_layout)
+        # Add the tab widget to the main layout
         main_layout.addWidget(self.tab_widget)
+
+        # Apply custom styles to widgets
+        self.setStyleSheet("""
+            QPushButton {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+            
+            QTabWidget::pane {
+                border: 1px solid #C2C7CB;
+                border-radius: 8px;
+                background-color: #F5F5F5;
+                margin-top: 12px;
+            }
+            
+            QTabBar::tab {
+                background-color: #4CAF50;
+                color: white;
+                padding: 8px 16px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                margin-right: -1px;
+            }
+            
+            QTabBar::tab:selected {
+                background-color: #2E8B57;
+            }
+        """)
+
+        # Add icons to buttons or tabs if desired
+        # For example:
+        # self.add_tab_button.setIcon(QIcon("add_icon.png"))
+
+        # Adjust layout and spacing as needed
+        # For example:
+        # main_layout.setSpacing(20)
+        # button_layout.setAlignment(Qt.AlignCenter)
 
     def __add_tab(self, name):
         new_tab = QWidget()
