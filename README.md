@@ -14,7 +14,6 @@
 **3. User-friendly interface**
     * Interact with your data intuitively through an accessible GUI.
 
-**(Continue with other features)**
 
 **Requirements:**
 
