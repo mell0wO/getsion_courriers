@@ -2,8 +2,6 @@
 
 **Description:**
 
-**(Concise and informative summary)**
-
 **Key Features:**
 
 **1. Table-based organization** (bold)
