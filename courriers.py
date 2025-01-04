@@ -94,15 +94,6 @@ class CourriersWidget(QWidget):
             }
         """)
 
-        # Add icons to buttons or tabs if desired
-        # For example:
-        # self.add_tab_button.setIcon(QIcon("add_icon.png"))
-
-        # Adjust layout and spacing as needed
-        # For example:
-        # main_layout.setSpacing(20)
-        # button_layout.setAlignment(Qt.AlignCenter)
-
     def __add_tab(self, name):
         new_tab = QWidget()
         layout = QVBoxLayout(new_tab)
